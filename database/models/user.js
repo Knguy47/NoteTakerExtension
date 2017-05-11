@@ -1,7 +1,9 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+
 mongoose.Promise = global.Promise;
 
+// GRADY WORK HERE
 var userSchema = mongoose.Schema({
   name: String,
   password: String,
@@ -76,6 +78,7 @@ var removeNote = (username, uri, note) => {
     user.save();
   });
 }
+
 
 module.exports = {
   user: User,
